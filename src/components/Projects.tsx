@@ -7,20 +7,21 @@ import { ExternalLink, Github } from "lucide-react";
 const Projects = () => {
   const projects = [
     {
-      title: "E-Commerce Platform",
-      description: "A full-stack e-commerce solution with user authentication, payment processing, and admin dashboard.",
+      title: "Predicting Big Clusters - AI for Production planning",
+      description: "A machine learning model that predicts production clusters to optimize manufacturing processes.",
       image: "https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?w=500&h=300&fit=crop",
-      technologies: ["React", "Node.js", "MongoDB", "Stripe"],
+      technologies: ["Python", "TensorFlow", "Pandas"],
       liveUrl: "#",
-      githubUrl: "#"
+      githubUrl: "https://github.com/MadalinaCarcea221989/Personal-Projects/tree/main/DKG"
     },
     {
-      title: "Task Management App",
-      description: "A collaborative task management application with real-time updates and team collaboration features.",
+      title: "Tumor Detection - AI in Healthcare",
+      description: "An AI model that detects tumors in medical images, enhancing diagnostic accuracy.",
       image: "https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=500&h=300&fit=crop",
-      technologies: ["Vue.js", "Firebase", "Tailwind CSS"],
-      liveUrl: "#",
-      githubUrl: "#"
+      technologies: ["Python", "TensorFlow", "Keras"],
+      liveUrl: "https://www.figma.com/proto/0HG8pMb5h5RO3LSfegtPdD/Prototype-app?page-id=0%3A1&type=design&node-id=1-3&viewport=1070%2C982%2C0.79&t=dYXf8aYKGhkGyZ01-1&scaling=scale-down&starting-point-node-id=1%3A3&show-proto-sidebar=1",
+      githubUrl: "#",
+      video: "https://edubuas-my.sharepoint.com/:v:/g/personal/221989_buas_nl/EenLeLfCGSFGt0l8z6U2Kb8BRFFmZIxfmshNEAUsVMkOZg?nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJPbmVEcml2ZUZvckJ1c2luZXNzIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXciLCJyZWZlcnJhbFZpZXciOiJNeUZpbGVzTGlua0NvcHkifX0&e=vBrnUh"
     },
     {
       title: "Weather Dashboard",
