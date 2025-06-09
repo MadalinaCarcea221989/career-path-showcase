@@ -1,7 +1,7 @@
 
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
-import { Mail, Github, FileText } from "lucide-react";
+import { Mail, Phone, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
@@ -10,7 +10,7 @@ const Contact = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">Let's Connect</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            I'm always open to discussing new opportunities and interesting projects
+            I'm always open to discussing new opportunities in AI, data science, and interesting projects
           </p>
         </div>
         
@@ -21,8 +21,8 @@ const Contact = () => {
           <CardContent className="space-y-8">
             <div className="text-center">
               <p className="text-muted-foreground leading-relaxed mb-8">
-                Whether you have an internship opportunity, want to collaborate on a project, 
-                or just want to say hello, I'd love to hear from you!
+                Whether you have an internship opportunity in AI/Data Science, want to collaborate on a project, 
+                or just want to discuss the latest in machine learning and computer vision, I'd love to hear from you!
               </p>
             </div>
             
@@ -32,34 +32,50 @@ const Contact = () => {
                   <Mail className="w-8 h-8 text-primary" />
                 </div>
                 <h3 className="font-semibold mb-2">Email</h3>
-                <Button variant="outline" className="w-full">
-                  john.dev@email.com
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => window.open('mailto:madalinacarcea@yahoo.com', '_blank')}
+                >
+                  madalinacarcea@yahoo.com
                 </Button>
               </div>
               
               <div className="text-center group">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors duration-200">
-                  <Github className="w-8 h-8 text-primary" />
+                  <Phone className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">GitHub</h3>
-                <Button variant="outline" className="w-full">
-                  View Projects
+                <h3 className="font-semibold mb-2">Phone</h3>
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => window.open('tel:+31643538696', '_blank')}
+                >
+                  (+31) 643538696
                 </Button>
               </div>
               
               <div className="text-center group">
                 <div className="inline-flex items-center justify-center w-16 h-16 bg-primary/10 rounded-full mb-4 group-hover:bg-primary/20 transition-colors duration-200">
-                  <FileText className="w-8 h-8 text-primary" />
+                  <Linkedin className="w-8 h-8 text-primary" />
                 </div>
-                <h3 className="font-semibold mb-2">Resume</h3>
-                <Button variant="outline" className="w-full">
-                  Download PDF
+                <h3 className="font-semibold mb-2">LinkedIn</h3>
+                <Button 
+                  variant="outline" 
+                  className="w-full"
+                  onClick={() => window.open('https://www.linkedin.com/in/carcea-mădălina-371706208/', '_blank')}
+                >
+                  Connect on LinkedIn
                 </Button>
               </div>
             </div>
             
             <div className="text-center pt-6">
-              <Button size="lg" className="hover:scale-105 transition-transform duration-200">
+              <Button 
+                size="lg" 
+                className="hover:scale-105 transition-transform duration-200"
+                onClick={() => window.open('mailto:madalinacarcea@yahoo.com', '_blank')}
+              >
                 Send Message
               </Button>
             </div>

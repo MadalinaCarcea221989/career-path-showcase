@@ -8,7 +8,7 @@ const About = () => {
         <div className="text-center mb-16">
           <h2 className="text-4xl md:text-5xl font-bold mb-4">About Me</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Get to know more about my journey and what drives my passion for development
+            Get to know more about my journey and what drives my passion for AI and data science
           </p>
         </div>
         
@@ -18,26 +18,42 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-4 text-primary">My Story</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I'm a passionate computer science student with a love for creating innovative solutions 
-                  through code. My journey began with curiosity about how websites work, and it has evolved 
-                  into a deep appreciation for clean, efficient, and user-friendly applications.
+                  I'm an aspiring Data Scientist & AI Engineer with practical experience in AI automation, 
+                  data analytics, and technical documentation. My journey combines technical expertise 
+                  with strong communication skills, allowing me to translate complex AI solutions into 
+                  clear, actionable insights.
                 </p>
                 <p className="text-muted-foreground leading-relaxed">
-                  Currently pursuing my degree while actively working on personal projects and contributing 
-                  to open-source initiatives. I believe in continuous learning and staying up-to-date with 
-                  the latest technologies and best practices.
+                  Currently pursuing my Bachelor's in Data Science and Artificial Intelligence at 
+                  Breda University of Applied Sciences, I'm passionate about building impactful tools 
+                  using computer vision, machine learning, and Python-based systems. I'm a fast learner, 
+                  clear communicator, and highly detail-oriented professional.
                 </p>
               </CardContent>
             </Card>
             
             <Card className="bg-card/50 backdrop-blur-sm border-border/50">
               <CardContent className="p-6">
-                <h3 className="text-2xl font-semibold mb-4 text-primary">What I'm Looking For</h3>
-                <p className="text-muted-foreground leading-relaxed">
-                  I'm actively seeking internship opportunities where I can contribute meaningfully to real-world 
-                  projects while learning from experienced professionals. I'm particularly interested in roles 
-                  that challenge me to grow and allow me to make a positive impact.
-                </p>
+                <h3 className="text-2xl font-semibold mb-4 text-primary">Work Experience</h3>
+                <div className="space-y-4">
+                  <div>
+                    <h4 className="font-semibold text-primary">AI Engineer - DeRegt Cables</h4>
+                    <p className="text-sm text-muted-foreground mb-2">08/2024 - 11/2024 | Rotterdam, Netherlands</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Documented and analyzed AI-driven automation projects for cable design optimization, 
+                      automated spiral measurement using computer vision, and created technical documentation 
+                      for Python-Blender parametric 3D modeling tools.
+                    </p>
+                  </div>
+                  <div>
+                    <h4 className="font-semibold text-primary">Data Science Intern - DKG Groep</h4>
+                    <p className="text-sm text-muted-foreground mb-2">01/2024 - 02/2024 | Bergen Op Zoom, Netherlands</p>
+                    <p className="text-muted-foreground text-sm leading-relaxed">
+                      Collaborated with a team of four data scientists to maximize profits, minimize losses, 
+                      and calculate production planning accuracy, successfully turning analytical insights into actionable solutions.
+                    </p>
+                  </div>
+                </div>
               </CardContent>
             </Card>
           </div>
@@ -46,7 +62,7 @@ const About = () => {
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
                 src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" 
-                alt="Developer workspace"
+                alt="AI and Data Science workspace"
                 className="w-full h-80 object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-primary/20 to-transparent"></div>

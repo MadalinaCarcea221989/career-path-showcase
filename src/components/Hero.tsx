@@ -13,14 +13,15 @@ const Hero = () => {
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent mb-6">
-            John Developer
+            Madalina Carcea
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
-            Full-Stack Developer & Problem Solver
+            Data Scientist & AI Engineer
           </p>
           <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed">
-            Passionate about creating innovative solutions through code. Currently seeking internship opportunities 
-            to contribute to meaningful projects and grow as a developer.
+            Aspiring Data Scientist & AI Engineer with practical experience in AI automation, 
+            data analytics, and technical documentation. Passionate about building impactful tools 
+            using computer vision, machine learning, and Python-based systems.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <Button 
