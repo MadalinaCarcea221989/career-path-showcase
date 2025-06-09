@@ -63,7 +63,7 @@ const Contact = () => {
                 <Button 
                   variant="outline" 
                   className="w-full"
-                  onClick={() => window.open('https://www.linkedin.com/in/carcea-mădălina-371706208/', '_blank')}
+                  onClick={() => window.open('https://www.linkedin.com/in/mădălina-carcea/', '_blank')}
                 >
                   Connect on LinkedIn
                 </Button>
