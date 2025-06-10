@@ -1,6 +1,7 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Sparkles, Code2 } from "lucide-react";
+import Gallery from "./Gallery";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -8,7 +9,7 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+    <section className="min-h-screen flex flex-col relative overflow-hidden">
       {/* Enhanced purple-cyan gradient background with overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-purple-600/25 via-purple-400/15 to-cyan-500/20"></div>
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25"></div>
@@ -18,7 +19,13 @@ const Hero = () => {
       <div className="absolute bottom-32 right-16 w-16 h-16 border border-cyan-400/30 rotate-12 animate-bounce"></div>
       <div className="absolute top-1/3 right-10 w-12 h-12 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full animate-pulse"></div>
       
-      <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
+      {/* Gallery Section */}
+      <div className="relative z-10 pt-20">
+        <Gallery />
+      </div>
+
+      {/* Main Hero Content */}
+      <div className="relative z-10 flex-1 flex items-center justify-center text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <div className="mb-8 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full blur-2xl animate-pulse"></div>
