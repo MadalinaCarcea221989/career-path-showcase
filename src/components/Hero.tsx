@@ -1,6 +1,6 @@
 
 import { Button } from "@/components/ui/button";
-import { ArrowDown, Sparkles, Code2 } from "lucide-react";
+import { ArrowDown, Sparkles, Code2, Zap, Star, Circle } from "lucide-react";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -13,10 +13,37 @@ const Hero = () => {
       <div className="absolute inset-0 bg-gradient-to-br from-purple-600/25 via-purple-400/15 to-cyan-500/20"></div>
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25"></div>
       
-      {/* Floating geometric shapes for futuristic effect */}
+      {/* Enhanced floating geometric shapes and patterns */}
       <div className="absolute top-20 left-10 w-20 h-20 border border-purple-400/30 rotate-45 animate-pulse"></div>
       <div className="absolute bottom-32 right-16 w-16 h-16 border border-cyan-400/30 rotate-12 animate-bounce"></div>
       <div className="absolute top-1/3 right-10 w-12 h-12 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full animate-pulse"></div>
+      
+      {/* Additional decorative patterns */}
+      <div className="absolute top-1/4 left-20 w-8 h-8 border-2 border-cyan-400/40 rounded-full animate-ping"></div>
+      <div className="absolute bottom-1/4 left-32 w-6 h-6 bg-purple-400/30 rotate-45 animate-pulse"></div>
+      <div className="absolute top-1/2 left-8 w-10 h-10 border border-purple-300/40 rotate-12 animate-spin" style={{animationDuration: '8s'}}></div>
+      
+      {/* Right side patterns */}
+      <div className="absolute top-1/3 right-32 w-14 h-14 border-2 border-cyan-300/35 rounded-full animate-pulse"></div>
+      <div className="absolute bottom-1/3 right-8 w-8 h-8 bg-gradient-to-r from-cyan-400/20 to-purple-400/20 rotate-45 animate-bounce"></div>
+      <div className="absolute top-1/2 right-24 w-4 h-4 bg-purple-500/40 rounded-full animate-ping"></div>
+      
+      {/* Animated icon decorations */}
+      <div className="absolute top-1/4 right-1/4">
+        <Zap className="w-6 h-6 text-cyan-400/60 animate-pulse" />
+      </div>
+      <div className="absolute bottom-1/4 left-1/4">
+        <Star className="w-5 h-5 text-purple-400/50 animate-bounce" />
+      </div>
+      <div className="absolute top-3/4 right-1/3">
+        <Circle className="w-4 h-4 text-cyan-300/40 animate-spin" style={{animationDuration: '6s'}} />
+      </div>
+      
+      {/* Floating dots pattern */}
+      <div className="absolute top-16 left-1/3 w-2 h-2 bg-purple-400/50 rounded-full animate-pulse"></div>
+      <div className="absolute top-24 left-1/4 w-1.5 h-1.5 bg-cyan-400/40 rounded-full animate-ping"></div>
+      <div className="absolute bottom-20 right-1/4 w-2.5 h-2.5 bg-purple-300/45 rounded-full animate-bounce"></div>
+      <div className="absolute bottom-16 right-1/3 w-1 h-1 bg-cyan-300/50 rounded-full animate-pulse"></div>
       
       {/* Main Hero Content */}
       <div className="relative z-10 flex-1 flex items-center justify-center text-center px-4 max-w-4xl mx-auto">
@@ -26,15 +53,17 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/29b2731b-6f40-448a-8226-7c97a6773824.png" 
               alt="Madalina Carcea" 
-              className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-purple-400/50 shadow-2xl shadow-purple-500/30 relative z-10 neon-border"
+              className="w-64 h-64 md:w-80 md:h-80 rounded-full mx-auto object-cover border-4 border-purple-400/50 shadow-2xl shadow-purple-500/30 relative z-10 neon-border"
             />
             <div className="absolute -top-2 -right-2 z-20">
-              <Sparkles className="w-8 h-8 text-cyan-400 animate-pulse" />
+              <Sparkles className="w-10 h-10 text-cyan-400 animate-pulse" />
             </div>
           </div>
           
           <div className="mb-6">
-            <h1 className="text-5xl md:text-7xl font-bold holographic-text mb-2">
+            <h1 className="text-5xl md:text-7xl font-bold holographic-text mb-2" style={{
+              textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000'
+            }}>
               Madalina Carcea
             </h1>
             <div className="flex items-center justify-center gap-2 text-purple-400">
