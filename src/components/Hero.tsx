@@ -62,11 +62,7 @@ const Hero = () => {
           
           <div className="mb-6">
             <h1
-              className="text-5xl md:text-7xl font-bold holographic-text mb-2"
-              style={{
-                textShadow:
-                  '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0.5px 0.5px 0 #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000',
-              }}
+              className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent drop-shadow-lg mb-2"
             >
               Madalina Carcea
             </h1>
