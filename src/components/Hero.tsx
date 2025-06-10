@@ -1,7 +1,6 @@
 
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Sparkles, Code2 } from "lucide-react";
-import Gallery from "./Gallery";
 
 const Hero = () => {
   const scrollToProjects = () => {
@@ -19,11 +18,6 @@ const Hero = () => {
       <div className="absolute bottom-32 right-16 w-16 h-16 border border-cyan-400/30 rotate-12 animate-bounce"></div>
       <div className="absolute top-1/3 right-10 w-12 h-12 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full animate-pulse"></div>
       
-      {/* Gallery Section */}
-      <div className="relative z-10 pt-20">
-        <Gallery />
-      </div>
-
       {/* Main Hero Content */}
       <div className="relative z-10 flex-1 flex items-center justify-center text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
