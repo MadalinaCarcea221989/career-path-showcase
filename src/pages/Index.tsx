@@ -8,7 +8,10 @@ import Contact from "@/components/Contact";
 
 const Index = () => {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen relative">
+      {/* Animated gradient overlay */}
+      <div className="gradient-overlay"></div>
+      
       <Navigation />
       <main>
         <div id="hero">

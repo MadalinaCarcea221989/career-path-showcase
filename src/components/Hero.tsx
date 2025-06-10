@@ -8,18 +8,21 @@ const Hero = () => {
   };
 
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-br from-background via-background to-secondary/20 relative overflow-hidden">
+    <section className="min-h-screen flex items-center justify-center relative overflow-hidden">
+      {/* Purple-cyan gradient background with overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-purple-400/20 via-cyan-300/20 to-purple-600/20"></div>
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25"></div>
+      
       <div className="relative z-10 text-center px-4 max-w-4xl mx-auto">
         <div className="animate-fade-in">
           <div className="mb-8">
             <img 
               src="/lovable-uploads/29b2731b-6f40-448a-8226-7c97a6773824.png" 
               alt="Madalina Carcea" 
-              className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-primary/20 shadow-xl"
+              className="w-48 h-48 rounded-full mx-auto object-cover border-4 border-primary/30 shadow-2xl shadow-purple-500/25"
             />
           </div>
-          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-primary to-primary/60 bg-clip-text text-transparent mb-6">
+          <h1 className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-cyan-500 to-purple-700 bg-clip-text text-transparent mb-6">
             Madalina Carcea
           </h1>
           <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -34,7 +37,7 @@ const Hero = () => {
             <Button 
               size="lg" 
               onClick={scrollToProjects}
-              className="hover:scale-105 transition-transform duration-200"
+              className="hover:scale-105 transition-transform duration-200 bg-gradient-to-r from-purple-600 to-cyan-600 hover:from-purple-700 hover:to-cyan-700"
             >
               View My Projects
             </Button>
@@ -42,7 +45,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="hover:scale-105 transition-transform duration-200"
+              className="hover:scale-105 transition-transform duration-200 border-purple-400 hover:border-cyan-400 hover:bg-gradient-to-r hover:from-purple-50 hover:to-cyan-50"
             >
               Get In Touch
             </Button>
