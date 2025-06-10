@@ -26,12 +26,12 @@ const Projects = () => {
       icon: <Zap className="w-5 h-5 text-cyan-400" />
     },
     {
-      title: "Weather Dashboard",
-      description: "A responsive weather application with location-based forecasts and interactive charts, featuring real-time data visualization.",
+      title: "Research Paper - The Impact of Robust Cybersecurity Practices on Consumer Confidence, and Economic Outcomes in SME Investments",
+      description: "A comprehensive research paper analyzing the effects of cybersecurity measures on consumer trust and economic performance in small and medium-sized enterprises.",
       image: "https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=500&h=300&fit=crop",
-      technologies: ["JavaScript", "API Integration", "Chart.js"],
+      technologies: ["Research", "Cybersecurity", "Data Analysis", "SMEs", "Economics", "Consumer Confidence"],
       liveUrl: "#",
-      githubUrl: "#",
+      githubUrl: "https://github.com/MadalinaCarcea221989/Personal-Projects/blob/main/Research%20paper/Individual_Research_paper.pdf",
       icon: <Brain className="w-5 h-5 text-purple-400" />
     },
     {
