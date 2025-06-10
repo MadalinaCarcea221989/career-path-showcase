@@ -61,9 +61,13 @@ const Hero = () => {
           </div>
           
           <div className="mb-6">
-            <h1 className="text-5xl md:text-7xl font-bold holographic-text mb-2" style={{
-              textShadow: '2px 2px 0 #000, -2px -2px 0 #000, 2px -2px 0 #000, -2px 2px 0 #000, 1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000'
-            }}>
+            <h1
+              className="text-5xl md:text-7xl font-bold holographic-text mb-2"
+              style={{
+                textShadow:
+                  '1px 1px 0 #000, -1px -1px 0 #000, 1px -1px 0 #000, -1px 1px 0 #000, 0.5px 0.5px 0 #000, -0.5px -0.5px 0 #000, 0.5px -0.5px 0 #000, -0.5px 0.5px 0 #000',
+              }}
+            >
               Madalina Carcea
             </h1>
             <div className="flex items-center justify-center gap-2 text-purple-400">
