@@ -97,15 +97,24 @@ const Projects = () => {
                 </div>
                 
                 <div className="flex gap-3">
-                  <Button size="sm" className="futuristic-button flex items-center gap-2 relative z-10">
-                    <ExternalLink className="w-4 h-4" />
-                    Live Demo
-                  </Button>
-                  <Button variant="outline" size="sm" className="flex items-center gap-2 glass-morphism border-purple-400/50 hover:border-cyan-400/50 text-purple-200 hover:text-cyan-200 transition-all duration-300">
-                    <Github className="w-4 h-4" />
-                    Code
-                  </Button>
-                </div>
+                {project.liveUrl && (
+                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                    <Button size="sm" className="futuristic-button flex items-center gap-2 relative z-10">
+                      <ExternalLink className="w-4 h-4" />
+                      Live Demo
+                    </Button>
+                  </a>
+                )}
+
+                {project.githubUrl && (
+                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                    <Button variant="outline" size="sm" className="flex items-center gap-2 glass-morphism border-purple-400/50 hover:border-cyan-400/50 text-purple-200 hover:text-cyan-200 transition-all duration-300">
+                      <Github className="w-4 h-4" />
+                      Code
+                    </Button>
+                  </a>
+                )}
+              </div>
               </CardContent>
             </Card>
           ))}
