@@ -62,11 +62,11 @@ const Hero = () => {
           
           <div className="mb-6">
             <h1
-               className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-purple-500 to-purple-600 bg-clip-text text-transparent drop-shadow-lg mb-2 text-outline"
+               className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-700 via-purple-600 to-purple-700 bg-clip-text text-transparent drop-shadow-lg mb-2 text-outline"
             >
               Madalina Carcea
             </h1>
-            <div className="flex items-center justify-center gap-2 text-purple-600">
+            <div className="flex items-center justify-center gap-2 text-purple-700">
               <Code2 className="w-6 h-6" />
               <span className="text-xl md:text-2xl font-semibold">Data Scientist & AI Engineer</span>
               <Code2 className="w-6 h-6" />
