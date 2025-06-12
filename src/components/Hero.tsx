@@ -62,18 +62,18 @@ const Hero = () => {
           
           <div className="mb-6">
             <h1
-               className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-400 via-cyan-400 to-purple-400 bg-clip-text text-transparent drop-shadow-lg mb-2 text-outline"
+               className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-purple-600 via-purple-500 to-purple-600 bg-clip-text text-transparent drop-shadow-lg mb-2 text-outline"
             >
               Madalina Carcea
             </h1>
-            <div className="flex items-center justify-center gap-2 text-purple-400">
+            <div className="flex items-center justify-center gap-2 text-purple-600">
               <Code2 className="w-6 h-6" />
               <span className="text-xl md:text-2xl font-semibold">Data Scientist & AI Engineer</span>
               <Code2 className="w-6 h-6" />
             </div>
           </div>
           
-          <p className="text-lg text-muted-foreground mb-12 max-w-3xl mx-auto leading-relaxed text-glow">
+          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-loose text-glow">
             Aspiring Data Scientist & AI Engineer with practical experience in AI automation, 
             data analytics, and technical documentation. Passionate about building impactful tools 
             using computer vision, machine learning, and Python-based systems.
