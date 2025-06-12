@@ -68,13 +68,13 @@ const Hero = () => {
             </h1>
             <div className="flex items-center justify-center gap-2 text-purple-700">
               <Code2 className="w-6 h-6" />
-              <span className="text-xl md:text-2xl font-semibold">Data Scientist & AI Engineer</span>
+              <span className="text-xl md:text-2xl font-semibold">Data Scientist & AI Engineering Student</span>
               <Code2 className="w-6 h-6" />
             </div>
           </div>
           
           <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-loose text-glow">
-            Aspiring Data Scientist & AI Engineer with practical experience in AI automation, 
+            Aspiring Data Scientist & AI Engineering Student with practical experience in AI automation, 
             data analytics, and technical documentation. Passionate about building impactful tools 
             using computer vision, machine learning, and Python-based systems.
           </p>
