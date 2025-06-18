@@ -47,13 +47,13 @@ const Projects = () => {
 
   return (
     <section id="projects" className="py-20 px-4 relative">
-      {/* Enhanced purple background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-purple-600/10 to-cyan-600/10"></div>
+      {/* Enhanced deep violet background overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 via-purple-900/25 to-violet-900/30"></div>
       
       <div className="max-w-7xl mx-auto relative z-10">
         <div className="text-center mb-16">
           <h2 className="section-heading">Featured Projects</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-glow">
+          <p className="text-xl max-w-2xl mx-auto text-glow">
             A collection of projects that demonstrate my skills and passion for development
           </p>
         </div>
@@ -67,18 +67,18 @@ const Projects = () => {
                   alt={project.title}
                   className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
+                <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                 <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {project.icon}
                 </div>
               </div>
               
               <CardHeader>
-                <CardTitle className="text-xl group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300 flex items-center gap-2">
+                <CardTitle className="text-xl group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-300 group-hover:to-purple-300 group-hover:bg-clip-text transition-all duration-300 flex items-center gap-2 high-contrast-text">
                   {project.icon}
                   {project.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardDescription className="project-description">
                   {project.description}
                 </CardDescription>
               </CardHeader>
@@ -89,7 +89,7 @@ const Projects = () => {
                     <Badge 
                       key={techIndex} 
                       variant="secondary" 
-                      className="text-xs bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border-purple-400/30 text-purple-200 hover:from-purple-500/30 hover:to-cyan-500/30 transition-all duration-200"
+                      className="text-xs bg-gradient-to-r from-indigo-500/30 to-purple-500/30 border-indigo-300/50 text-slate-100 hover:from-indigo-500/40 hover:to-purple-500/40 transition-all duration-200"
                     >
                       {tech}
                     </Badge>
@@ -108,7 +108,7 @@ const Projects = () => {
 
                 {project.githubUrl && (
                   <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm" className="flex items-center gap-2 glass-morphism border-purple-400/50 hover:border-cyan-400/50 text-purple-200 hover:text-cyan-200 transition-all duration-300">
+                    <Button variant="outline" size="sm" className="flex items-center gap-2 glass-morphism border-slate-200/50 hover:border-indigo-300/70 text-slate-100 hover:text-indigo-200 transition-all duration-300">
                       <Github className="w-4 h-4" />
                       Code
                     </Button>
