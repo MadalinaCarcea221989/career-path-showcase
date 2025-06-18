@@ -58,14 +58,14 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
           {projects.map((project, index) => (
-            <Card key={index} className="futuristic-card group">
+            <Card key={index} className="futuristic-card group overflow-hidden">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-64 md:h-72 object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
                 <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
@@ -73,23 +73,23 @@ const Projects = () => {
                 </div>
               </div>
               
-              <CardHeader>
-                <CardTitle className="text-xl group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-300 group-hover:to-purple-300 group-hover:bg-clip-text transition-all duration-300 flex items-center gap-2 high-contrast-text">
+              <CardHeader className="pb-4">
+                <CardTitle className="text-xl md:text-2xl group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-300 group-hover:to-purple-300 group-hover:bg-clip-text transition-all duration-300 flex items-center gap-2 high-contrast-text leading-tight">
                   {project.icon}
                   {project.title}
                 </CardTitle>
-                <CardDescription className="project-description">
+                <CardDescription className="text-lg md:text-xl leading-relaxed high-contrast-text mt-4">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               
-              <CardContent>
+              <CardContent className="pt-0">
                 <div className="flex flex-wrap gap-2 mb-6">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge 
                       key={techIndex} 
                       variant="secondary" 
-                      className="text-xs bg-gradient-to-r from-indigo-500/30 to-purple-500/30 border-indigo-300/50 text-slate-100 hover:from-indigo-500/40 hover:to-purple-500/40 transition-all duration-200"
+                      className="text-sm bg-gradient-to-r from-indigo-500/30 to-purple-500/30 border-indigo-300/50 text-slate-100 hover:from-indigo-500/40 hover:to-purple-500/40 transition-all duration-200"
                     >
                       {tech}
                     </Badge>
