@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -58,63 +57,63 @@ const Projects = () => {
           </p>
         </div>
         
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-10">
+        <div className="grid grid-cols-1 gap-16">
           {projects.map((project, index) => (
-            <Card key={index} className="futuristic-card group overflow-hidden">
+            <Card key={index} className="futuristic-card group overflow-hidden max-w-6xl mx-auto">
               <div className="relative overflow-hidden rounded-t-lg">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-64 md:h-72 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-96 md:h-[500px] object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute top-6 right-6 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                   {project.icon}
                 </div>
               </div>
               
-              <CardHeader className="pb-4">
-                <CardTitle className="text-xl md:text-2xl group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-300 group-hover:to-purple-300 group-hover:bg-clip-text transition-all duration-300 flex items-center gap-2 high-contrast-text leading-tight">
+              <CardHeader className="pb-6 p-8">
+                <CardTitle className="text-3xl md:text-4xl group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-300 group-hover:to-purple-300 group-hover:bg-clip-text transition-all duration-300 flex items-center gap-3 high-contrast-text leading-tight">
                   {project.icon}
                   {project.title}
                 </CardTitle>
-                <CardDescription className="text-lg md:text-xl leading-relaxed high-contrast-text mt-4">
+                <CardDescription className="text-xl md:text-2xl leading-relaxed high-contrast-text mt-6">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               
-              <CardContent className="pt-0">
-                <div className="flex flex-wrap gap-2 mb-6">
+              <CardContent className="pt-0 p-8">
+                <div className="flex flex-wrap gap-3 mb-8">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge 
                       key={techIndex} 
                       variant="secondary" 
-                      className="text-sm bg-gradient-to-r from-indigo-500/30 to-purple-500/30 border-indigo-300/50 text-slate-100 hover:from-indigo-500/40 hover:to-purple-500/40 transition-all duration-200"
+                      className="text-base px-4 py-2 bg-gradient-to-r from-indigo-500/30 to-purple-500/30 border-indigo-300/50 text-slate-100 hover:from-indigo-500/40 hover:to-purple-500/40 transition-all duration-200"
                     >
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 
-                <div className="flex gap-3">
-                {project.liveUrl && (
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm" className="futuristic-button flex items-center gap-2 relative z-10">
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
-                    </Button>
-                  </a>
-                )}
+                <div className="flex gap-4">
+                  {project.liveUrl && (
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
+                      <Button size="lg" className="futuristic-button flex items-center gap-2 relative z-10 text-lg px-6 py-3">
+                        <ExternalLink className="w-5 h-5" />
+                        Live Demo
+                      </Button>
+                    </a>
+                  )}
 
-                {project.githubUrl && (
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm" className="flex items-center gap-2 glass-morphism border-slate-200/50 hover:border-indigo-300/70 text-slate-100 hover:text-indigo-200 transition-all duration-300">
-                      <Github className="w-4 h-4" />
-                      Code
-                    </Button>
-                  </a>
-                )}
-              </div>
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
+                      <Button variant="outline" size="lg" className="flex items-center gap-2 bg-black/80 border-black hover:bg-black text-white hover:text-white transition-all duration-300 text-lg px-6 py-3">
+                        <Github className="w-5 h-5" />
+                        Code
+                      </Button>
+                    </a>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
