@@ -5,7 +5,7 @@ import { Mail, Phone, Linkedin } from "lucide-react";
 
 const Contact = () => {
   return (
-    <section id="contact" className="py-20 px-4 bg-background">
+    <section id="contact" className="py-20 px-4 bg-indigo-950">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-5xl md:text-6xl font-bold mb-6 text-glow">Let's Connect</h2>
