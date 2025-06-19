@@ -50,7 +50,7 @@ const Projects = () => {
       {/* Enhanced deep violet background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 via-purple-900/25 to-violet-900/30"></div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
+      <div className="max-w-8xl mx-auto relative z-10">
         <div className="text-center mb-20">
           <h2 className="section-heading">Featured Projects</h2>
           <p className="text-xl max-w-2xl mx-auto text-glow">
@@ -58,8 +58,8 @@ const Projects = () => {
           </p>
         </div>
         
-        {/* Enhanced 2-column grid layout with larger cards */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-7xl mx-auto">
+        {/* Enhanced 2-column grid layout with increased width */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-8xl mx-auto">
           {projects.map((project, index) => (
             <Card key={index} className="group overflow-hidden bg-gradient-to-br from-indigo-900/40 via-purple-900/30 to-violet-900/40 backdrop-filter backdrop-blur-xl border-4 border-gradient-to-r from-indigo-400/60 via-purple-400/70 to-cyan-400/60 hover:border-indigo-300/80 rounded-2xl shadow-2xl hover:shadow-indigo-500/30 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] min-h-[600px]">
               <div className="relative overflow-hidden rounded-t-2xl">
