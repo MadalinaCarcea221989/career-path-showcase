@@ -61,7 +61,7 @@ const About = () => {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden shadow-2xl">
               <img 
-                src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=600&h=400&fit=crop" 
+                src="/lovable-uploads/f07872e9-47eb-4159-b3fb-6b2ba4ff6f17.png" 
                 alt="AI and Data Science workspace"
                 className="w-full h-80 object-cover"
               />

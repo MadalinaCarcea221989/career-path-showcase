@@ -53,7 +53,7 @@ const Gallery = () => {
           <h2 className="text-4xl md:text-5xl font-bold holographic-text mb-4">
             Professional Journey
           </h2>
-          <p className="text-xl text-muted-foreground text-glow">
+          <p className="text-4xl md:text-5xl font-bold holographic-text mb-4">
             Highlights from conferences, presentations, and collaborative work
           </p>
         </div>
