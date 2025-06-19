@@ -18,11 +18,6 @@ const Gallery = () => {
       caption: "Conference networking and collaboration"
     },
     {
-      src: "/lovable-uploads/cdda63f5-652e-40fe-9539-15d889e608c7.png",
-      alt: "Professional Portrait",
-      caption: "Professional development activities"
-    },
-    {
       src: "/lovable-uploads/f07872e9-47eb-4159-b3fb-6b2ba4ff6f17.png",
       alt: "Speaking Engagement",
       caption: "Conference presentation on stage"

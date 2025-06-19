@@ -18,7 +18,7 @@ const About = () => {
               <CardContent className="p-6">
                 <h3 className="text-2xl font-semibold mb-4 text-primary">My Story</h3>
                 <p className="text-muted-foreground leading-relaxed mb-4">
-                  I'm an aspiring Data Scientist & AI Engineer with practical experience in AI automation, 
+                  I'm an aspiring Data Scientist & AI Engineer Student with practical experience in AI automation, 
                   data analytics, and technical documentation. My journey combines technical expertise 
                   with strong communication skills, allowing me to translate complex AI solutions into 
                   clear, actionable insights.
