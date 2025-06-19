@@ -56,6 +56,21 @@ const About = () => {
                 </div>
               </CardContent>
             </Card>
+
+            <Card className="bg-card/50 backdrop-blur-sm border-border/50">
+              <CardContent className="p-6">
+                <h3 className="text-2xl font-semibold mb-4 text-primary">Erasmus Blended Intensive Program</h3>
+                <p className="text-muted-foreground leading-relaxed mb-2">
+                  Participated in an Erasmus Blended Intensive Program at St. Pölten University of Applied Sciences, Austria.
+                </p>
+                <p className="text-muted-foreground leading-relaxed">
+                  Collaborated with international students on interdisciplinary projects focused on digital innovation and AI. 
+                  The program combined online learning with a week-long on-site experience in Austria, enhancing my teamwork, 
+                  cross-cultural communication, and problem-solving skills in a dynamic academic environment.
+                </p>
+                <p className="text-sm text-muted-foreground mt-2">05/2024 | St. Pölten, Austria</p>
+              </CardContent>
+            </Card>
           </div>
           
           <div className="relative">
