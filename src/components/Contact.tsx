@@ -25,7 +25,18 @@ const Contact = () => {
                 or just want to discuss the latest in machine learning and computer vision, I'd love to hear from you!
               </p>
             </div>
-            
+
+            <div className="text-center pt-4">
+              <Button
+                size="lg"
+                variant="outline"
+                className="glass-morphism text-xl md:text-2xl py-4 px-10 border-purple-400/50 text-slate-100 hover:border-cyan-400/70 hover:text-cyan-200 hover:bg-gradient-to-r hover:from-purple-500/10 hover:to-cyan-500/10 transition-all duration-300"
+                onClick={() => window.open('/lovable-uploads/Madalina_Carcea_Resume.pdf', '_blank')}
+              >
+                Download Here My Resume
+              </Button>
+            </div>
+
             <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
               <div className="text-center group">
                 <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full mb-6 group-hover:from-purple-400/30 group-hover:to-cyan-400/30 transition-colors duration-200 border border-purple-400/40">
@@ -72,17 +83,6 @@ const Contact = () => {
                 </Button>
               </div>
             </div>
-            
-              <div className="text-center pt-4">
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="glass-morphism text-xl md:text-2xl py-4 px-10 border-purple-400/50 text-slate-100 hover:border-cyan-400/70 hover:text-cyan-200 hover:bg-gradient-to-r hover:from-purple-500/10 hover:to-cyan-500/10 transition-all duration-300"
-                  onClick={() => window.open('/lovable-uploads/Madalina_Carcea_Resume.pdf', '_blank')}
-                >
-                  Download Resume
-                </Button>
-              </div>
 
             <div className="text-center pt-8">
               <Button 
