@@ -1,4 +1,3 @@
-
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Sparkles, Code2, Zap, Star, Circle } from "lucide-react";
 
@@ -53,7 +52,7 @@ const Hero = () => {
             <img 
               src="/lovable-uploads/29b2731b-6f40-448a-8226-7c97a6773824.png" 
               alt="Madalina Carcea" 
-              className="w-64 h-64 md:w-80 md:h-80 rounded-full mx-auto object-cover border-4 border-purple-400/50 shadow-2xl shadow-purple-500/30 relative z-10 neon-border"
+              className="w-80 h-80 md:w-96 md:h-96 rounded-full mx-auto object-cover border-4 border-purple-400/50 shadow-2xl shadow-purple-500/30 relative z-10 neon-border"
             />
             <div className="absolute -top-2 -right-2 z-20">
               <Sparkles className="w-10 h-10 text-cyan-400 animate-pulse" />
