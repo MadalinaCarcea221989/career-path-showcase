@@ -18,7 +18,7 @@ const Gallery = () => {
       caption: "Conference networking and collaboration"
     },
     {
-      src: "/lovable-uploads/Screenshot 2025-06-20 003417.png",
+      src: "/lovable-uploads/Screenshot2025-06-20003417.png",
       alt: "Professional Portrait",
       caption: "Professional development activities"
     },

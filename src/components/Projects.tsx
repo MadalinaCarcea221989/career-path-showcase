@@ -9,7 +9,7 @@ const Projects = () => {
     {
       title: "Predicting Big Clusters - AI for Production planning",
       description: "A machine learning model that predicts production clusters to optimize manufacturing processes using advanced algorithms and data analytics.",
-      image: "/lovable-uploads/Screenshot 2025-06-20 0022225.png",
+      image: "/lovable-uploads/Screenshot2025-06-200022225.png",
       technologies: ["Python", "TensorFlow", "Pandas"],
       liveUrl: "#",
       githubUrl: "https://github.com/MadalinaCarcea221989/Personal-Projects/tree/main/DKG",
@@ -28,7 +28,7 @@ const Projects = () => {
     {
       title: "Research Paper - The Impact of Robust Cybersecurity Practices on Consumer Confidence, and Economic Outcomes in SME Investments",
       description: "A comprehensive research paper analyzing the effects of cybersecurity measures on consumer trust and economic performance in small and medium-sized enterprises.",
-      image: "/lovable-uploads/Screenshot 2025-06-20 002005.png",
+      image: "/lovable-uploads/Screenshot2025-06-20002005.png",
       technologies: ["Research", "Cybersecurity", "Data Analysis", "SMEs", "Economics", "Consumer Confidence"],
       liveUrl: "#",
       githubUrl: "https://github.com/MadalinaCarcea221989/Personal-Projects/blob/main/Research%20paper/Individual_Research_paper.pdf",
