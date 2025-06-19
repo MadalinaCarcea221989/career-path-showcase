@@ -9,8 +9,8 @@ const Hero = () => {
 
   return (
     <section className="min-h-screen flex flex-col relative overflow-hidden">
-      {/* Enhanced purple-cyan gradient background with overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-600/25 via-purple-400/15 to-cyan-500/20"></div>
+      {/* Enhanced deep violet-indigo gradient background with overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-800/30 via-purple-700/25 to-violet-800/30"></div>
       <div className="absolute inset-0 bg-grid-slate-100 [mask-image:linear-gradient(0deg,white,rgba(255,255,255,0.6))] dark:bg-grid-slate-700/25"></div>
       
       {/* Enhanced floating geometric shapes and patterns */}
@@ -62,18 +62,21 @@ const Hero = () => {
           
           <div className="mb-6">
             <h1
-               className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-violet-900 via-violet-600 to-violet-900 bg-clip-text text-transparent drop-shadow-lg mb-2 text-outline"
+               className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-slate-100 via-indigo-200 to-slate-100 bg-clip-text text-transparent drop-shadow-lg mb-2"
+               style={{
+                 textShadow: '0 0 20px rgba(255, 255, 255, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.9)'
+               }}
             >
               Madalina Carcea
             </h1>
-            <div className="flex items-center justify-center gap-2 text-violet-700">
+            <div className="flex items-center justify-center gap-2 text-slate-100">
               <Code2 className="w-6 h-6" />
-              <span className="text-xl md:text-2xl font-semibold">Data Scientist & AI Engineering Student</span>
+              <span className="text-xl md:text-2xl font-semibold text-glow">Data Scientist & AI Engineering Student</span>
               <Code2 className="w-6 h-6" />
             </div>
           </div>
           
-          <p className="text-xl md:text-2xl text-muted-foreground mb-12 max-w-3xl mx-auto leading-loose text-glow">
+          <p className="text-xl md:text-2xl mb-12 max-w-3xl mx-auto leading-loose text-glow">
             Aspiring Data Scientist & AI Engineering Student with practical experience in AI automation, 
             data analytics, and technical documentation. Passionate about building impactful tools 
             using computer vision, machine learning, and Python-based systems.
@@ -92,7 +95,7 @@ const Hero = () => {
               variant="outline" 
               size="lg"
               onClick={() => document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' })}
-              className="glass-morphism border-purple-400/50 hover:border-cyan-400/70 text-purple-200 hover:text-cyan-200 hover:bg-gradient-to-r hover:from-purple-500/10 hover:to-cyan-500/10 transition-all duration-300 group"
+              className="glass-morphism border-slate-200/50 hover:border-cyan-300/70 text-slate-100 hover:text-cyan-200 hover:bg-gradient-to-r hover:from-purple-500/10 hover:to-cyan-500/10 transition-all duration-300 group"
             >
               <ArrowDown className="w-5 h-5 mr-2 group-hover:text-cyan-200 transition-colors" />
               Get In Touch

@@ -46,75 +46,76 @@ const Projects = () => {
   ];
 
   return (
-    <section id="projects" className="py-20 px-4 relative">
-      {/* Enhanced purple background overlay */}
-      <div className="absolute inset-0 bg-gradient-to-br from-purple-900/20 via-purple-600/10 to-cyan-600/10"></div>
+    <section id="projects" className="py-24 px-4 relative">
+      {/* Enhanced deep violet background overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-indigo-900/30 via-purple-900/25 to-violet-900/30"></div>
       
-      <div className="max-w-7xl mx-auto relative z-10">
-        <div className="text-center mb-16">
+      <div className="max-w-8xl mx-auto relative z-10">
+        <div className="text-center mb-20">
           <h2 className="section-heading">Featured Projects</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto text-glow">
+          <p className="text-xl max-w-2xl mx-auto text-glow">
             A collection of projects that demonstrate my skills and passion for development
           </p>
         </div>
         
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+        {/* Enhanced 2-column grid layout with increased width */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 max-w-8xl mx-auto">
           {projects.map((project, index) => (
-            <Card key={index} className="futuristic-card group">
-              <div className="relative overflow-hidden rounded-t-lg">
+            <Card key={index} className="group overflow-hidden bg-gradient-to-br from-indigo-900/40 via-purple-900/30 to-violet-900/40 backdrop-filter backdrop-blur-xl border-4 border-gradient-to-r from-indigo-400/60 via-purple-400/70 to-cyan-400/60 hover:border-indigo-300/80 rounded-2xl shadow-2xl hover:shadow-indigo-500/30 transition-all duration-500 hover:-translate-y-3 hover:scale-[1.02] min-h-[600px]">
+              <div className="relative overflow-hidden rounded-t-2xl">
                 <img 
                   src={project.image} 
                   alt={project.title}
-                  className="w-full h-48 object-cover transition-transform duration-500 group-hover:scale-110"
+                  className="w-full h-72 object-cover transition-transform duration-700 group-hover:scale-115"
                 />
-                <div className="absolute inset-0 bg-gradient-to-t from-purple-900/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-all duration-300"></div>
-                <div className="absolute top-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                <div className="absolute inset-0 bg-gradient-to-t from-indigo-900/80 via-purple-900/40 to-transparent opacity-60 group-hover:opacity-80 transition-all duration-500"></div>
+                <div className="absolute top-4 right-4 p-3 bg-black/50 rounded-full backdrop-blur-sm opacity-0 group-hover:opacity-100 transition-all duration-500 transform translate-y-2 group-hover:translate-y-0">
                   {project.icon}
                 </div>
               </div>
               
-              <CardHeader>
-                <CardTitle className="text-xl group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-purple-400 group-hover:to-cyan-400 group-hover:bg-clip-text transition-all duration-300 flex items-center gap-2">
+              <CardHeader className="pb-4 pt-8">
+                <CardTitle className="text-2xl font-bold group-hover:text-transparent group-hover:bg-gradient-to-r group-hover:from-indigo-300 group-hover:to-purple-300 group-hover:bg-clip-text transition-all duration-500 flex items-center gap-3 high-contrast-text leading-tight">
                   {project.icon}
                   {project.title}
                 </CardTitle>
-                <CardDescription className="text-muted-foreground">
+                <CardDescription className="text-lg leading-relaxed high-contrast-text font-medium mt-4">
                   {project.description}
                 </CardDescription>
               </CardHeader>
               
-              <CardContent>
-                <div className="flex flex-wrap gap-2 mb-6">
+              <CardContent className="pt-0 pb-8 px-8">
+                <div className="flex flex-wrap gap-3 mb-8">
                   {project.technologies.map((tech, techIndex) => (
                     <Badge 
                       key={techIndex} 
                       variant="secondary" 
-                      className="text-xs bg-gradient-to-r from-purple-500/20 to-cyan-500/20 border-purple-400/30 text-purple-200 hover:from-purple-500/30 hover:to-cyan-500/30 transition-all duration-200"
+                      className="text-sm px-4 py-2 bg-gradient-to-r from-indigo-500/40 to-purple-500/40 border-2 border-indigo-300/50 text-slate-100 hover:from-indigo-500/50 hover:to-purple-500/50 hover:border-indigo-300/70 transition-all duration-300 font-semibold"
                     >
                       {tech}
                     </Badge>
                   ))}
                 </div>
                 
-                <div className="flex gap-3">
-                {project.liveUrl && (
-                  <a href={project.liveUrl} target="_blank" rel="noopener noreferrer">
-                    <Button size="sm" className="futuristic-button flex items-center gap-2 relative z-10">
-                      <ExternalLink className="w-4 h-4" />
-                      Live Demo
-                    </Button>
-                  </a>
-                )}
+                <div className="flex gap-4">
+                  {project.liveUrl && (
+                    <a href={project.liveUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button size="lg" className="futuristic-button flex items-center justify-center gap-2 w-full relative z-10 py-3 font-semibold text-base">
+                        <ExternalLink className="w-5 h-5" />
+                        Live Demo
+                      </Button>
+                    </a>
+                  )}
 
-                {project.githubUrl && (
-                  <a href={project.githubUrl} target="_blank" rel="noopener noreferrer">
-                    <Button variant="outline" size="sm" className="flex items-center gap-2 glass-morphism border-purple-400/50 hover:border-cyan-400/50 text-purple-200 hover:text-cyan-200 transition-all duration-300">
-                      <Github className="w-4 h-4" />
-                      Code
-                    </Button>
-                  </a>
-                )}
-              </div>
+                  {project.githubUrl && (
+                    <a href={project.githubUrl} target="_blank" rel="noopener noreferrer" className="flex-1">
+                      <Button variant="outline" size="lg" className="flex items-center justify-center gap-2 bg-black/90 border-2 border-black hover:bg-black text-white hover:text-white transition-all duration-300 w-full py-3 font-semibold hover:border-gray-700 text-base">
+                        <Github className="w-5 h-5" />
+                        Code
+                      </Button>
+                    </a>
+                  )}
+                </div>
               </CardContent>
             </Card>
           ))}
