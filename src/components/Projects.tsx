@@ -27,7 +27,7 @@ const Projects = () => {
     },
     {
       title: "Research Paper - The Impact of Robust Cybersecurity Practices on Consumer Confidence, and Economic Outcomes in SME Investments",
-      description: "A comprehensive research paper analyzing the effects of cybersecurity measures on consumer trust and economic performance in small and medium-sized enterprises.",
+      description: "A comprehensive research project analyzing how cybersecurity measures impact consumer trust and economic performance in small and medium-sized enterprises (SMEs). Through surveys and interviews, the study shows that robust data protection leads to fewer breaches, stronger customer loyalty, and measurable business growth—positioning cybersecurity as both a safeguard and a strategic asset.",
       image: "/lovable-uploads/Screenshot2025-06-20002005.png",
       technologies: ["Research", "Cybersecurity", "Data Analysis", "SMEs", "Economics", "Consumer Confidence"],
       liveUrl: "#",
