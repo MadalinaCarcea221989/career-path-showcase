@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 import { ArrowDown, Sparkles, Code2, Zap, Star, Circle } from "lucide-react";
 
@@ -60,12 +61,7 @@ const Hero = () => {
           </div>
           
           <div className="mb-6">
-            <h1
-               className="text-5xl md:text-7xl font-bold bg-gradient-to-r from-slate-100 via-indigo-200 to-slate-100 bg-clip-text text-transparent drop-shadow-lg mb-2"
-               style={{
-                 textShadow: '0 0 20px rgba(255, 255, 255, 0.8), 2px 2px 4px rgba(0, 0, 0, 0.9)'
-               }}
-            >
+            <h1 className="text-5xl md:text-7xl font-bold text-slate-100 mb-2" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.7)' }}>
               Madalina Carcea
             </h1>
             <div className="flex items-center justify-center gap-2 text-slate-100">
