@@ -50,6 +50,7 @@ const Hero = () => {
         <div className="animate-fade-in">
           <div className="mb-8 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full blur-2xl animate-pulse"></div>
+            {/* Main profile image with neon border and glow effect */}
             <img 
               src="/images/29b2731b-6f40-448a-8226-7c97a6773824.png" 
               alt="Madalina Carcea" 

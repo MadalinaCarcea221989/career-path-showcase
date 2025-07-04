@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 const Gallery = () => {
   const [currentImage, setCurrentImage] = useState(0);
 
+  // Change path for the images so they are accessible
   const images = [
     {
       src: "/images/8f32465a-f3c6-43bd-957d-245ef80d1dab.png",

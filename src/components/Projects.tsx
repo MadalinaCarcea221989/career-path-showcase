@@ -4,6 +4,8 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { ExternalLink, Github, Zap, Brain } from "lucide-react";
 
+// Enhanced Projects component with futuristic design and animations
+// Change path for the images so they are accessible
 const Projects = () => {
   const projects = [
     {

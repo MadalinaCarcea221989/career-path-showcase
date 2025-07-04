@@ -26,6 +26,7 @@ const Contact = () => {
               </p>
             </div>
 
+            {/* Button to download resume */}
             <div className="text-center pt-4">
               <Button
                 size="lg"
