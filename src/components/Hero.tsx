@@ -51,7 +51,7 @@ const Hero = () => {
           <div className="mb-8 relative">
             <div className="absolute inset-0 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full blur-2xl animate-pulse"></div>
             <img 
-              src="/lovable-uploads/29b2731b-6f40-448a-8226-7c97a6773824.png" 
+              src="public/images/29b2731b-6f40-448a-8226-7c97a6773824.png" 
               alt="Madalina Carcea" 
               className="w-96 h-96 md:w-96 md:h-96 rounded-full mx-auto object-cover border-4 border-purple-400/50 shadow-2xl shadow-purple-500/30 relative z-10 neon-border"
             />
