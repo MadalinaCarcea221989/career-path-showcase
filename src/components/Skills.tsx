@@ -41,8 +41,8 @@ const Skills = () => {
     <section id="skills" className="py-20 px-4 bg-secondary/10">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-glow">Skills & Technologies</h2>
-          <p className="text-2xl md:text-3xl text-slate-100 max-w-3xl mx-auto leading-relaxed text-glow">
+          <h2 className="text-5xl md:text-6xl font-bold mb-6 text-white">Skills & Technologies</h2>
+          <p className="text-2xl md:text-3xl text-white max-w-3xl mx-auto leading-relaxed">
             A comprehensive overview of my technical skills and expertise across various domains
           </p>
         </div>
@@ -51,7 +51,7 @@ const Skills = () => {
           {skillCategories.map((category, index) => (
             <Card key={index} className="group hover:shadow-xl transition-all duration-300 glass-morphism border-2 border-purple-400/30 hover:border-cyan-400/50">
               <CardHeader className="pb-4">
-                <CardTitle className="text-2xl md:text-3xl text-slate-100 group-hover:text-cyan-200 transition-colors duration-200 text-glow font-bold">
+                <CardTitle className="text-2xl md:text-3xl text-white group-hover:text-cyan-200 transition-colors duration-200 font-bold">
                   {category.title}
                 </CardTitle>
               </CardHeader>
@@ -61,7 +61,7 @@ const Skills = () => {
                     <Badge 
                       key={skillIndex} 
                       variant="secondary" 
-                      className="text-base md:text-lg py-2 px-4 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 text-slate-100 border border-purple-400/40 hover:from-purple-400/30 hover:to-cyan-400/30 hover:border-cyan-300/60 transition-all duration-200 cursor-default backdrop-blur-sm"
+                      className="text-base md:text-lg py-2 px-4 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 text-white border border-purple-400/40 hover:from-purple-400/30 hover:to-cyan-400/30 hover:border-cyan-300/60 transition-all duration-200 cursor-default backdrop-blur-sm"
                     >
                       {skill}
                     </Badge>
@@ -74,14 +74,14 @@ const Skills = () => {
 
         <Card className="glass-morphism border-2 border-purple-400/30">
           <CardHeader>
-            <CardTitle className="text-3xl md:text-4xl text-slate-100 text-center text-glow font-bold mb-4">Language Skills</CardTitle>
+            <CardTitle className="text-3xl md:text-4xl text-white text-center font-bold mb-4">Language Skills</CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
               {languages.map((language, index) => (
                 <div key={index} className="text-center p-6 rounded-lg bg-gradient-to-br from-purple-500/20 to-cyan-500/20 border border-purple-400/30 backdrop-blur-sm">
-                  <h4 className="font-bold text-xl md:text-2xl text-slate-100 mb-3 text-glow">{language.name}</h4>
-                  <p className="text-lg md:text-xl text-slate-200 text-glow">{language.level}</p>
+                  <h4 className="font-bold text-xl md:text-2xl text-white mb-3">{language.name}</h4>
+                  <p className="text-lg md:text-xl text-white">{language.level}</p>
                 </div>
               ))}
             </div>
