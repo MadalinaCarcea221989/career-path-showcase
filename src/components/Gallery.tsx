@@ -8,27 +8,27 @@ const Gallery = () => {
 
   const images = [
     {
-      src: "/public/images/8f32465a-f3c6-43bd-957d-245ef80d1dab.png",
+      src: "/images/8f32465a-f3c6-43bd-957d-245ef80d1dab.png",
       alt: "NLP Presentation - What is NLP?",
       caption: "Presenting on Natural Language Processing"
     },
     {
-      src: "/public/images/be2ebd16-1663-4a57-960a-be08b2663e1a.png",
+      src: "/images/be2ebd16-1663-4a57-960a-be08b2663e1a.png",
       alt: "Conference Group Photo",
       caption: "Conference networking and collaboration"
     },
     {
-      src: "/public/images/Screenshot2025-06-20003417.png",
+      src: "/images/Screenshot2025-06-20003417.png",
       alt: "Professional Portrait",
       caption: "Professional development activities"
     },
     {
-      src: "/public/images/f07872e9-47eb-4159-b3fb-6b2ba4ff6f17.png",
+      src: "/images/f07872e9-47eb-4159-b3fb-6b2ba4ff6f17.png",
       alt: "Speaking Engagement",
       caption: "Conference presentation on stage"
     },
     {
-      src: "/public/images/96a80c04-231a-4020-abc7-434074738ebf.png",
+      src: "/images/96a80c04-231a-4020-abc7-434074738ebf.png",
       alt: "Workshop Participation",
       caption: "Hands-on technical workshop"
     }

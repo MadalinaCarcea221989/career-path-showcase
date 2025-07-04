@@ -31,7 +31,7 @@ const Contact = () => {
                 size="lg"
                 variant="outline"
                 className="glass-morphism text-xl md:text-2xl py-4 px-10 border-purple-400/50 text-white hover:border-cyan-400/70 hover:text-cyan-200 hover:bg-gradient-to-r hover:from-purple-500/10 hover:to-cyan-500/10 transition-all duration-300"
-                onClick={() => window.open('/public/images/Madalina_Carcea_Resume.pdf', '_blank')}
+                onClick={() => window.open('/images/Madalina_Carcea_Resume.pdf', '_blank')}
               >
                 Download Here My Resume
               </Button>
